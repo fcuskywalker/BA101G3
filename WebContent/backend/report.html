@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="utf-8">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <title>USER REPORT</title>
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <!--external css  ICON-->
+    <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/zabuto_calendar.css">
+    <link rel="stylesheet" type="text/css" href="assets/js/gritter/css/jquery.gritter.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/lineicons/style.css">
+    <link href="assets/css/style-responsive.css" rel="stylesheet">
+    <link href="assets/css/table-responsive.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/style-responsive.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+<section id="container">
+
+    <!-- **********************************************************************************************************************************************************
+    MAIN SIDEBAR MENU
+    *********************************************************************************************************************************************************** -->
+
+    <!--sidebar start 側邊欄-->
+    <aside>
+        <div id="sidebar" class="nav-collapse ">
+            <!-- sidebar menu start-->
+            <ul class="sidebar-menu" id="nav-accordion">
+                <p class="centered">
+                    <a href="index.html">
+                        <img src="img/babeq3.png" width="190">
+                    </a>
+                </p>
+                <h5 class="centered" style="font-size: 24px;">
+                    <a href="javascript:;">
+                    <span style="color: #636363">
+                        <i class="fa fa-sign-out" aria-hidden="true"></i>
+                        阿肥</span>
+                    </a>
+                </h5>
+
+                <li class="sub-menu">
+                    <a href="javascript:;">
+                        <i class="fa fa-desktop"></i>
+                        <span>會員資料管理</span>
+                    </a>
+                    <ul class="sub">
+                        <li><a href="member/member_expert.html">專家審核</a></li>
+                        <li><a href="member/member_grade.html">資深爸媽審核</a></li>
+                        <li><a href="member/buyer_report.html">買家檢舉</a></li>
+                        <li><a href="member/seller_reprot.html">賣家檢舉</a></li>
+                        <li><a href="member/product_report.html">商品檢舉</a></li>
+                        <li><a href="member/product_message_report.html">商品留言檢舉</a></li>
+                        <li><a href="member/answer_report.html">回覆問題檢舉</a></li>
+                        <li><a href="member/article_message_report.html">留言檢舉</a></li>
+                        <li><a href="report.html">聊天室用戶檢舉</a></li>
+                        <li><a href="panels.html">會員資料管理</a></li>
+                    </ul>
+                </li>
+                <li class="sub-menu">
+                    <a href="javascript:;">
+                        <i class="fa fa-car"></i>
+                        <span>推薦資料管理</span>
+                    </a>
+                    <ul class="sub">
+                        <li><a href="map.html">推薦資料管理</a></li>
+                        <li><a href="todo_list.html">副食品</a></li>
+                    </ul>
+                </li>
+                <li class="sub-menu">
+                    <a href="javascript:;">
+                        <i class="fa fa-book"></i>
+                        <span>分類管理</span>
+                    </a>
+                    <ul class="sub">
+                        <li><a href="blank.html">購物區分類</a></li>
+                        <li><a href="login.html">文章分類</a></li>
+                        <li><a href="lock_screen.html">商品分類</a></li>
+                        <li><a href="lock_screen.html">問題分類</a></li>
+                        <li><a href="lock_screen.html">專家分類</a></li>
+                    </ul>
+                </li>
+                <li class="sub-menu">
+                    <a href="news.html">
+                        <i class="fa fa-bell"></i>
+                        <span>最新消息管理</span>
+                    </a>
+                </li>
+                <li class="sub-menu">
+                    <a href="javascript:;">
+                        <i class=" fa fa-legal"></i>
+                        <span>員工帳戶管理</span>
+                    </a>
+                </li>
+                <li class="sub-menu">
+                    <a href="javascript:;">
+                        <i class=" fa fa-database"></i>
+                        <span>系統參數管理</span>
+                    </a>
+                </li>
+                <li class="sub-menu">
+                    <a href="javascript:;">
+                        <i class="fa fa-bar-chart-o"></i>
+                        <span>後台分析管理</span>
+                    </a>
+                </li>
+            </ul>
+            <!-- sidebar menu end-->
+        </div>
+    </aside>
+    <!--sidebar end-->
+
+    <!-- **********************************************************************************************************************************************************
+    MAIN CONTENT  這邊開始改 BBQ
+    *********************************************************************************************************************************************************** -->
+    <!--main content start-->
+    <section id="main-content">
+        <section class="wrapper">
+            <h3><i class="fa fa-angle-right"></i> USER REPORT</h3>
+            <div class="row">
+                <style>
+                    .table-striped tbody tr:nth-of-type(odd) {
+                        background-color: #ffeba3;
+                    }
+                </style>
+
+                <div class="row mt">
+                    <div class="col-sm-12">
+                        <div class="content-panel">
+                            <table class="table table-striped table-advance table-hover table-bordered">
+                                <h4><i class="fa fa-angle-right"></i> 聊天室用戶檢舉</h4>
+                                <hr>
+                                <thead>
+                                <tr>
+                                    <th><i class="fa fa-bullhorn"></i> 被檢舉人</th>
+                                    <th class="hidden-phone"><i class="fa fa-question-circle"></i> 被檢舉原因</th>
+                                    <th><i class="fa fa-bookmark"></i> 檢舉人</th>
+                                    <th><i class=" fa fa-edit"></i></th>
+
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td><a href="basic_table.html#">沒國隊長</a></td>
+                                    <td class="hidden-phone">我帥ㄅ ㄏㄏ</td>
+                                    <td>前端好難</td>
+                                    <td>
+                                        <button type="button" class="btn btn-secondary">展開</button>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="basic_table.html#">
+                                            Dashgum co
+                                        </a>
+                                    </td>
+                                    <td class="hidden-phone">Lorem Ipsum dolor</td>
+                                    <td>謝謝指教</td>
+                                    <td>
+                                        <button type="button" class="btn btn-secondary">展開</button>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="basic_table.html#">
+                                            Another Co
+                                        </a>
+                                    </td>
+                                    <td class="hidden-phone">Lorem Ipsum dolor</td>
+                                    <td>老師救命</td>
+                                    <td>
+                                        <button type="button" class="btn btn-secondary">展開</button>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="basic_table.html#">
+                                            Dashgum ext
+                                        </a>
+                                    </td>
+                                    <td class="hidden-phone">Lorem Ipsum dolor</td>
+                                    <td>套不上去就要QQ惹</td>
+                                    <td>
+                                        <button type="button" class="btn btn-secondary">展開</button>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td><a href="basic_table.html#">Total Ltd</a></td>
+                                    <td class="hidden-phone">Lorem Ipsum dolor</td>
+                                    <td>我覺得今天少睡了24小時</td>
+                                    <td>
+                                        <button type="button" class="btn btn-secondary">展開</button>
+                                    </td>
+
+                                </tr>
+                                </tbody>
+                            </table>
+
+                        </div><!-- /content-panel -->
+                    </div><!-- /col-md-12 -->
+                    <div class="col-sm-12">
+                        <div class="col-sm-12" style="height: 10px"></div>
+                    </div>
+
+                    <div class="col-sm-12">
+                        <div class="content-panel" style="padding: 3px">
+
+                            <form>
+
+                                <div class="panel panel-default">
+
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">檢舉人:XXXX</h3>
+                                    </div>
+
+                                    <div class="media">
+                                        <div class="media-left media-middle">
+                                            <div class="col-sm-2">
+                                                <a href="#">
+                                                    <img src="img/學妹隊長.jpg" width="100%">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="media-body">
+                                            <div class="col-sm-10" style="width: 100%">
+                                                <h2 class="media-heading">檢舉原因</h2>
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                                veniam,
+                                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                                                esse
+                                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                                cupidatat
+                                                non
+                                                <hr>
+
+                                                <h3 class="media-heading">被檢舉內容</h3>
+                                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                                veniam,
+                                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                                                esse
+                                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                                cupidatat
+                                                non
+                                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                                veniam,
+                                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                                                esse
+                                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                                cupidatat
+                                                non
+                                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                                veniam,
+                                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                                                esse
+                                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                                cupidatat
+                                                non
+
+                                            </div>
+
+
+                                        </div>
+
+                                        <div class="col-sm-12" style="height: 10px"></div>
+
+                                    </div>
+
+
+                                </div>
+
+                                <fieldset class="form-group">
+
+                                    <div class="form-group">
+                                        <label for="comment">不通過原因:</label>
+                                        <textarea class="form-control" rows="5" id="comment"></textarea>
+                                    </div>
+
+                                    <div class="text-center">
+                                        <button class="btn btn-warning btn-lg" style="margin-right: 50px">
+                                            <span class="glyphicon glyphicon-ok"></span> 檢舉通過
+                                        </button>
+                                        <button class="btn btn-danger btn-lg" style="margin-left: 50px">
+                                            <span class="glyphicon glyphicon-remove"></span> 檢舉不過
+                                        </button>
+                                    </div>
+
+
+
+                                </fieldset>
+                            </form>
+
+
+                        </div><!-- /content-panel -->
+                    </div><!-- /col-md-12 -->
+                </div><!-- /row -->
+            </div>
+
+        </section>
+
+        <nav aria-label="Page navigation">
+            <ul class="pagination pagination pagination-lg">
+                <li>
+                    <a href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                    </a>
+                </li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li>
+                    <a href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <! --/wrapper -->
+    </section><!-- /MAIN CONTENT -->
+    <!--main content end-->
+    <!--footer start-->
+    <footer class="site-footer">
+        <div class="text-center">
+            2017 - BaBeQ
+            <a href="#main-content" class="go-top">
+                <i class="fa fa-angle-up"></i>
+            </a>
+        </div>
+    </footer>
+    <!--footer end-->
+</section>
+<!-- js placed at the end of the document so the pages load faster -->
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script class="include" type="text/javascript" src="assets/js/jquery.dcjqaccordion.2.7.js"></script>
+<script src="assets/js/jquery.scrollTo.min.js"></script>
+<script src="assets/js/jquery.nicescroll.js" type="text/javascript"></script>
+<!--common script for all pages 共用JS-->
+<script src="assets/js/common-scripts.js"></script>
+<!--script for this page-->
+<script>
+    //刪除 custom select box
+</script>
+</body>
+
+</html>

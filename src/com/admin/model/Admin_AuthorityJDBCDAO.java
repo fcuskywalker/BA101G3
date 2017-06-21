@@ -114,13 +114,12 @@ public class Admin_AuthorityJDBCDAO implements Admin_AuthorityDAO_interface {
                 }
             }
         }
-
-
     }
 
     @Override
 	public List<Admin_AuthorityVO> findByAdmNo(String adm_no) {
-		List<Admin_AuthorityVO> list = new ArrayList<Admin_AuthorityVO>();
+
+        List<Admin_AuthorityVO> list = new ArrayList<Admin_AuthorityVO>();
 		Admin_AuthorityVO admin_authorityVO = null;
 		Connection con = null;
 		PreparedStatement pstmt = null;
